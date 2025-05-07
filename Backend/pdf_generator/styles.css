@@ -1,0 +1,93 @@
+/* colors: 
+#002a54 azul
+#ffdd00 amarillo
+#a4036f rosa
+#A3C4BC ashgray
+#A41623 rojo
+*/
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c2cac4;
+}
+
+.logo{
+    height: 60px;
+}
+
+header span{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #002a54;
+}
+
+.productInfo{
+    height: 75px;
+    margin: 20px auto 3px auto;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #002a54;
+    color: #ffF;
+}
+
+.creditInfo{
+    padding: 0px 30px;
+    border: 3px solid #002a54;
+    border-radius: 0px 0px 10px 10px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.1rem;
+}
+
+.leftCol span, .rightCol span{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+table{
+    width: 100%;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    border-collapse: collapse;
+}
+
+table thead{
+    height: 40px;
+    background-color: #c2cac4;
+    color: #002a54;
+}
+
+table tbody tr{
+    height: 40px;
+    border-bottom: 2px solid #002a54;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+td{
+    padding: 0px 15px;
+}
+
+table thead th:first-child {
+    border-top-left-radius: 15px;
+}
+
+table thead th:last-child {
+    border-top-right-radius: 15px;
+}
+  
+
