@@ -1,0 +1,84 @@
+📄 PDF Generator Backend – 21ledclique
+Este es un backend construido con Node.js para generar archivos PDF de forma dinámica. Es ideal para integrarse con aplicaciones web o móviles que requieran la creación de documentos como reportes, facturas, constancias, etc.
+
+🚀 Características
+Generación de PDFs usando plantillas dinámicas.
+
+Arquitectura modular con separación de responsabilidades.
+
+Uso de variables de entorno con .env.
+
+Integración con librerías para PDF (como pdfkit, puppeteer, o html-pdf).
+
+Preparado para despliegue local o en servidores.
+
+📁 Estructura del Proyecto
+bash
+Copiar
+Editar
+/
+├── node_modules/           # Dependencias
+├── pdf_generator/          # Módulo principal de generación de PDF
+│   └── ...                 # Archivos relacionados (templates, lógica, etc.)
+├── .env                    # Variables de entorno
+├── app.js                  # Configuración principal de la app
+├── db.js                   # Conexión a base de datos (si aplica)
+├── server.js               # Punto de entrada del servidor
+├── package.json            # Información del proyecto y scripts
+└── package-lock.json       # Versiones exactas de dependencias
+⚙️ Instalación
+Clona el repositorio:
+
+bash
+Copiar
+Editar
+git clone https://github.com/tu-usuario/21ledclique.git
+cd 21ledclique
+Instala las dependencias:
+
+bash
+Copiar
+Editar
+npm install
+Configura el archivo .env:
+
+bash
+Copiar
+Editar
+PORT=3000
+# Otras variables necesarias para PDF, rutas, base de datos, etc.
+Inicia el servidor:
+
+bash
+Copiar
+Editar
+npm start
+🧪 Endpoints (ejemplo)
+h
+Copiar
+Editar
+POST /generate-pdf
+Content-Type: application/json
+
+{
+  "title": "Factura",
+  "content": "Detalle del contenido que irá en el PDF"
+}
+🧰 Tecnologías Usadas
+Node.js
+
+Express
+
+dotenv
+
+[PDF library] (dependiendo de cuál uses: pdfkit, puppeteer, etc.)
+
+📌 Notas
+Asegúrate de tener instalado Node.js v14+.
+
+Se recomienda tener configurado un visor de PDFs para validar el resultado de forma visual.
+
+Este backend puede ser adaptado fácilmente a microservicios.
+
+🧑‍💻 Autor
+21ledclique
